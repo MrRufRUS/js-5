@@ -1,0 +1,18 @@
+.chart {
+    font: 10px sans-serif;
+}
+.bar {
+    fill: steelblue;
+}
+.dot {
+    fill: orange;
+    stroke: #fff;
+}
+.axis text {
+    font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языки программироавния</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Языки программироавния</h1>
+    <div>
+        <label for="xAxisSelect">Ось X:</label>
+        <select id="xAxisSelect">
+            <option value="Название">Название</option>
+            <option value="Год выпуска">Год выпуска</option>
+            <option value="Тип языка">Тип языка</option>
+        </select>
+        <label for="yAxisSelect">Ось Y:</label>
+        <select id="yAxisSelect" multiple>
+            <option value="Рейтинг">Рейтинг</option>
+            <option value="Октябрь 2023">Октябрь 2023</option>
+            <option value="Октябрь 2022">Октябрь 2022</option>
+        </select>
+        <label for="chartTypeSelect">Тип диаграммы:</label>
+        <select id="chartTypeSelect">
+            <option value="bar">Столбчатая</option>
+            <option value="scatter">Точечная</option>
+        </select>
+        <button onclick="drawChart()">Построить диаграмму</button>
+    </div>
+    <svg width="800" height="700"></svg>
+
+    <script src="d3.v6.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
